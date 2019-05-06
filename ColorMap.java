@@ -1,20 +1,26 @@
 import java.util.*;
+import java.io.*;
 public class ColorMap
 {
-    private static int ColorCount;
+    private static int colorCount;
+    private int[] adjacencyList;
     
     public boolean Color
     {
-    
-    }
+        
+    }   
     public static void main(String[] args)
     {
         
         //Read in adjacnecy list
+        File graphFile = new File(args[0]);
+        Graph g = new Graph(graphFile);
         
-        for(int i = 0; i < vertexCount; i++) //Find vertexCount somehow
+        adjacencyList = new int[vertexCount][vertexCount];
+        
+        for(int i = 0; i < g.getVertexCount(); i++)
         {
-            
+            adjacencyList
         }
             
          
