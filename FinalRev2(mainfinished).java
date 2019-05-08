@@ -63,7 +63,7 @@ public class FinalRev2
         int[] results = color(g); 
         for(int i = 0; i < results.length; i++)
         {
-            System.out.print(" " + i + results[i] + " ");
+            System.out.println(results[i]);
         }
         
         //Test to see the number of different colors.
